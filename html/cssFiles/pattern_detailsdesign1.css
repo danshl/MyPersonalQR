@@ -1,0 +1,134 @@
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.info-box {
+    position: relative;
+    bottom: 20px;
+    left: 0%;
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 45%;
+    text-align: left;
+    line-height: 1.2;
+    border: 4px solid #4CAF50;
+    background: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.info-box p {
+    font-size: 20px;
+}
+
+.info-box p:first-child {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title {
+    position: relative;
+    bottom: 0px;
+    left: 0%;
+    font-size: 50px;
+    white-space: nowrap;
+    position: relative;
+    width: 500px;
+    color: black;
+}
+
+#m_image {
+    position: fixed;
+    top: 360px;
+    right: 630px;
+    z-index: 999;
+    width: 250px;
+    height: 250px;
+}
+
+#backButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    left: 650px;
+    top: 550px;
+}
+
+#backButton:hover {
+    background-color: #fff;
+    color: #45A445;
+}
+
+.buttons {
+text-align: center;
+}
+
+#printQRButton{
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+margin: 10px;
+position: absolute;
+top: 630px;
+left: 1090px;
+z-index: 1000;
+}
+
+#printQRButton:hover,
+#editButton:hover,
+#saveButton:hover {
+background-color: #fff;
+color: #45A445;
+}
+
+#editButton,
+#saveButton {
+display: inline-block;
+padding: 10px 20px;
+background-color: #4682B4;
+position: absolute;
+top: 680px;
+left: 1125px;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+
+margin: 10px;
+z-index: 1000;
+}
+
+
+.editable {
+    border: 1px solid transparent;
+    padding: 3px;
+    cursor: text;
+}
+
+.editable.edit-mode {
+    border: 1px solid #000;
+}

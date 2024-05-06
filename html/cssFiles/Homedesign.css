@@ -1,0 +1,289 @@
+body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../images/background.png');
+    background-size: cover;
+      
+  }
+
+  .circle {
+    background-color: #4CAF50;
+    border: 3px solid #4CAF50;
+    color: white;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin: 70px; 
+    position: relative;
+    right: 235px;
+    top: 100px;
+  }
+
+  .circle:hover {
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+  }
+
+  .title {
+    position: absolute;
+    top:-50px;
+    left:430px;
+    font-size: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 500px;
+  }
+
+  .title::after {
+    content: ' ';
+    display: inline-block;
+    width: 100%;
+    background-color: #4CAF50; 
+    transform: translateX(-100%);
+    animation: slide 2s linear forwards;
+    
+  }
+
+  .circle a {
+    text-decoration: none;
+  }
+
+  .circle a:hover {
+    color: #4CAF50; 
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #c1 {
+  position: absolute;
+  top: 100px;
+  left: 200px; 
+}
+
+.modal {
+display: none;
+}
+
+
+.login-box {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 250px;
+  left: 700px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  display: none;
+  font-size:20px;
+  box-shadow: 0 0 10px 2px #4CAF50;
+}
+
+.login-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+ 
+}
+
+.login-box input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Serif Font', serif;
+}
+
+.login-box button {
+  width: 50%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+  left: 100px;
+  bottom: -20px;
+  font-family: 'Serif Font', serif;
+}
+
+
+.signup-modal {
+  width: 400px;
+  height: 490px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 250px;
+  left: 700px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  display: none;
+  box-shadow: 0 0 10px 2px #4CAF50;
+}
+
+.signup-modal label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.signup-modal input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.welcome-message {
+          position: absolute;
+          top: 20px;
+          left: 20px; 
+          font-size: 18px; 
+}
+
+#backButton {
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+display: none;
+position: relative;
+left:300px;
+top:350px;
+}
+
+#backButton:hover {
+background-color: #fff; 
+color: #45A445;
+}
+
+#Myd {
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+position: absolute;
+left:1500px;
+top:30px;
+}
+
+#Myd:hover {
+background-color: #fff; 
+color: #45A445; 
+}
+
+#Logout {
+display: inline-block;
+padding: 10px 20px;
+background-color: #DC143C;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+position: absolute;
+left:1500px;
+top:80px;
+display: none;
+}
+
+#Logout:hover {
+background-color: #fff; 
+color: #DC143C; 
+}
+
+#reg {
+display: inline-block;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+position: relative;
+left:160px;
+top:10px;
+}
+
+#reg:hover {
+background-color: #fff; 
+color: #45A445; 
+}
+#cameraView {
+position: fixed;
+top: 250px;
+left: 600px;
+width: 600px;
+height: 450px;
+border-radius: 6px; 
+border: 2px solid green; 
+margin: 10px; 
+}
+.register-button[disabled] {
+  background-color: gray; 
+  color: #777; 
+  cursor: not-allowed; 
+}
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.custom-alert.show {
+  display: block;
+}
+.loading-message {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #password-validation-message {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px; 
+  position:absolute;
+  top:80px;
+}

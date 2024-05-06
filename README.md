@@ -7,8 +7,8 @@ QR codes have become an integral part of modern communication, offering a quick 
 
 ## Requirements:
 
-- jsQR-master: The jsQR library is required for client-side QR code decoding. Please ensure that the 'jsQR-master' folder is included in the project directory.
-- phpqrcode: The phpqrcode library is required for server-side QR code generation. Please ensure that the 'phpqrcode' folder is included in the project directory.
+- jsQR-master: The jsQR library is required for client-side QR code decoding. Please ensure that the 'jsQR-master' folder is included in the html directory.
+- phpqrcode: The phpqrcode library is required for server-side QR code generation. Please ensure that the 'phpqrcode' folder is included in the html directory.
 - adapt con.php to your login details db platform.
 
 ## License:
